@@ -17,20 +17,20 @@ const nextConfig = {
       },
     ],
   },
-  rewrites: async () => {
-    return {
-      fallback: [
-        {
-          source: "/imgapi/:path*",
-          destination: 'https://imgapi.cn/:path*',
-        },
-        {
-          source: "/hitokoto/:path*",
-          destination: 'https://v1.hitokoto.cn/:path*'
-        }
-      ]
-    };
-  },
+  // rewrites: async () => {
+  //   return {
+  //     fallback: [
+  //       {
+  //         source: "/imgapi/:path*",
+  //         destination: 'https://imgapi.cn/:path*',
+  //       },
+  //       {
+  //         source: "/hitokoto/:path*",
+  //         destination: 'https://v1.hitokoto.cn/:path*'
+  //       }
+  //     ]
+  //   };
+  // },
 };
 
 export default nextConfig;
